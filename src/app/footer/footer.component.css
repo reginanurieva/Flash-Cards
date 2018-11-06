@@ -14,8 +14,13 @@
 
 }
 
+.fa-heart{
+  font-size: 30px;
+  color: #e8405a;
+}
+
 li{
-  font-size: 10px;
+  font-size: 11px;
   color: #505256;
   list-style-type: none;
   padding: 10px;
@@ -26,11 +31,25 @@ li{
  }
 
  .lines{
-   background-color: #eff0f2;
+   background-color: #c3c7c9;
  }
 
  .op{
-   opacity: .5;
+   /* opacity: .5; */
    font-size: 13px;
    text-align: center;
+ }
+
+ p{
+   text-align: center;
+   font-size: 15px;
+   font-family: times;
+ }
+
+ h6{
+   text-align: center;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   font-size: 15px;
+   opacity: 0.7;
  }
