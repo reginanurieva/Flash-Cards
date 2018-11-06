@@ -10,7 +10,7 @@ background-position: center;
   text-align: center;
   z-index: 3;
   background-color: #202021;
-  margin-top: -20px;
+  /* margin-top: -20px; */
 
 }
 h2 {
@@ -24,6 +24,34 @@ h2 {
 body{
   background-color: black;
 }
+
+p{
+  color: white;
+  font-size: 19px;
+  opacity: .65;
+}
+
+.startbutton{
+  background-color: #d8364e;
+  color: white;
+}
+
+.js{
+  text-align: left;
+  padding-left: 20px;
+  font-size: 15px;
+}
+
+.headline2{
+  text-align: left;
+  color: #a3d1bd;
+  padding-left: 20px;
+}
+.jsbutton{
+  margin-right: 40%;
+  /* border-color: red; */
+}
+
 /* .img{
   background-color: black;
 } */
