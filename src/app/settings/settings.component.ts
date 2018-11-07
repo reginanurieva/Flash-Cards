@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { FlipCard } from '../models/flip.model';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-settings',
@@ -9,35 +9,24 @@ import { Component, OnInit } from '@angular/core';
 
 export class SettingsComponent {
   constructor( ) { }
-
-  // var timeleft = 10;
-  // var downloadTimer = setInterval(function(){
-  //
-  // document.getElementById("progressBar").value = 10 - --timeleft;
-  //   if(timeleft <= 0)
-  //     clearInterval(downloadTimer);
-  // },1000);
-
-
-  // function Countdown() => {
-  //
-  //   var timeleft = 10;
-  //   var downloadTimer = setInterval(function(){
-  //   timeleft--;
-  //   document.getElementById("countdowntimer").textContent = timeleft;
-  //   if(timeleft <= 0)
-  //       clearInterval(downloadTimer);
-  //   },1000);
-  // }
-  function Countdown() => {
-  var timeleft = 10;
-  var downloadTimer = setInterval(function(){
-  document.getElementById("progressBar").value = 10 - --timeleft;
-  if(timeleft <= 0)
-    clearInterval(downloadTimer);
-},3000);
-}
-
-
-
+  timeLeft: number = 30;
+  interval;
+    cardFront() {
+      this.interval = setInterval(() => {
+        if(this.timeLeft > 0) {
+          this.timeLeft--;
+        } else {
+          this.timeLeft = 30;
+        }
+      },1000);
+    }
+    cardBack () {
+    if (this.timeLeft === 0) {
+      $(".cardFront").hide();
+      $(".cardBack").show();
+    } else {
+      $(".cardFront").show();
+      $(".cardBack").hide();
+    }
+  }
 }
