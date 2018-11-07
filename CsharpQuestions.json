@@ -1,0 +1,98 @@
+{
+	"FlashCard": [{
+			"category": "Csharp",
+			"Question": "What is Csharp?",
+			"Answer": "C# is a modern, general-purpose, object-oriented programming language developed by Microsoft. C# is designed for Common Language Infrastructure (CLI), which consists of the executable code and runtime environment that allows use of various high-level languages on different computer platforms and architectures"
+		},
+		{
+			"category": "Csharp",
+			"Question": "What is a namespace?",
+			"Answer": "A namespace is designed for providing a way to keep one set of names separate from another. The class names declared in one namespace does not conflict with the same class names declared in another"
+		},
+		{
+			"category": "Csharp",
+			"Question": "What is an Object and a Class?",
+			"Answer": "A class is an encapsulation of properties and methods that are used to represent a real-time entity. It is a data structure that brings all the instances together in a single unit. An Object in an instance of a Class.Technically, it is just a block of memory allocated that can be stored in the form of Variables, Array or a Collection"
+		},
+		{
+			"category": "Csharp",
+			"Question": "What is the difference between “continue” and “break” statements in C#?",
+			"Answer": "Using break statement, you can 'jump out of a loop' whereas by using continue statement, you can 'jump over one iteration' and then resume your loop execution"
+		},
+		{
+			"category": "Csharp",
+			"Question": "What is a property?",
+			"Answer": "Properties are members that provide a flexible mechanism to read, write or compute the values of private fields, in other words by the property we can access private fields. In other words we can say that a property is a return type function/method with one parameter or without a parameter. These are always public data members. It uses methods to access and assign values to private fields called accessors"
+		},
+		{
+			"category": "Csharp",
+			"Question": "What is REPL?",
+			"Answer": "READ - EVALUATE - PRINT - LOOP"
+		},
+		{
+			"category": "Csharp",
+			"Question": "How to sort an array in C#?",
+			"Answer": "Using Array.sort(array) function. It sorts the elements in an entire one-dimensional Array using the IComparable implementation of each element of the Array"
+		},
+		{
+			"category": "Csharp",
+			"Question": "How to sort an array in C# in descending order?",
+			"Answer": "First sort the array using Array.sort(array) then reverse the same using Array.reverse(array) method"
+		},
+		{
+			"category": "Csharp",
+			"Question": "What are the differences between a class and structure?",
+			"Answer": "  classes are reference types and structs are value types. Structures do not support inheritance. Structures cannot have default constructor"
+		},
+		{
+			"category": "Csharp",
+			"Question": "List out the differences between Array and ArrayList in C#?",
+			"Answer": "Array stores the values or elements of same data type but arraylist stores values of different datatypes.Arrays will use the fixed length but arraylist does not uses fixed length like array "
+		},
+		{
+			"category": "Csharp",
+			"Question": "Explain “static” keyword in C#?",
+			"Answer": "“Static” keyword can be used for declaring a static member. If the class is made static then all the members of the class are also made static. If the variable is made static then it will have a single instance and the value change is updated in this instance"
+		},
+		{
+			"category": "Csharp",
+			"Question": "What are the fundamental OOP concepts?",
+			"Answer": "The four fundamental concepts of Object Oriented Programming are:Encapsulation– The Internal representation of an object is hidden from the view outside object’ s definition.Only the required information can be accessed whereas the rest of the data implementation is hidden. Abstraction– It is a process of identifying the critical behavior and data of an object and eliminating the irrelevant details. Inheritance– It is the ability to create new classes from another class.It is done by accessing, modifying and extending the behavior of objects in the parent class. Polymorphism– The name means, one name, many forms.It is achieved by having multiple methods with the same name but different implementations."
+		},
+		{
+			"category": "Csharp",
+			"Question": "Explain Code compilation in C#",
+			"Answer": "There are four steps in code compilation which include:Compiling the source code into Managed code by C# compiler.Combining the newly created code into assemblies.Loading the Common Language Runtime(CLR).Executing the assembly by CLR."
+		},
+		{
+			"category": "Csharp",
+			"Question": "What is “using” statement in C#?",
+			"Answer": "“Using” Keyword denotes that the particular namespace is being used by the program.For Example,using System.Here System is a namespace.The class Console is defined under System.So we can use the console.writeline(“….”) or readline in our program "
+		},
+		{
+			"category": "Csharp",
+			"Question": "What is the difference between public, static and void?",
+			"Answer": "Public declared variables or methods are accessible anywhere in the application. Static declared variables or methods are globally accessible without creating an instance of the class. Static member are by default not globally accessible it depends upon the type of access modified used. The compiler stores the address of the method as the entry point and uses this information to begin execution before any objects are created. And Void is a type modifier that states that the method or variable does not return any value"
+		},
+		{
+			"category": "Csharp",
+			"Question": "Define Constructors",
+			"Answer": "A constructor is a member function in a class that has the same name as its class. The constructor is automatically invoked whenever an object class is created. It constructs the values of data members while initializing the class"
+		},
+		{
+			"category": "MySQL",
+			"Question": "What is the difference between CHAR and VARCHAR?",
+			"Answer": "When the table is created, CHAR is used to define the fixed length of the table and columns. The length value could be in the range of 1-255. VARCHAR command is given to adjust the column and table length as required"
+		},
+		{
+			"category": "MySQL",
+			"Question": "What is the difference between primary key and candidate key?",
+			"Answer": "Primary key in MySQL is use to identify every row of a table in unique manner. For one table there is only one primary key. One of the candidate keys is the primary key and the candidate keys can be used to reference the foreign keys"
+		},
+		{
+			"category": "MySQL",
+			"Question": "Show certain selected rows with the value 'whatever'",
+			"Answer": "SELECT * FROM [table name] WHERE [field name] = 'whatever'"
+		}
+	]
+}
