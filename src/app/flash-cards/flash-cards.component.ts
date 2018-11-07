@@ -16,13 +16,11 @@ import * as $ from 'jquery'
 })
 export class FlashCardsComponent implements OnInit {
   flashcards: FirebaseListObservable<any[]>;
+
   constructor(private flashcardService: FlashCardService){}
 
     ngOnInit(){
       this.flashcards = this.flashcardService.getCards();
-      $(document).ready(function(){
-        alert("jquery workds");
-      });
       }
 
 }

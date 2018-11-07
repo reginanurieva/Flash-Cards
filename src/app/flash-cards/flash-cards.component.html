@@ -1,13 +1,12 @@
-
-<div *ngFor="let flashcard of flashcards | async" class="panel panel-default questions">
-<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-	<div class="flipper">
-		<div class="front">
-      <div class="question">{{flashcard.Question}}</div>
-    </div>
-		<div class="back">
-      <div class="answer">{{flashcard.Answer}}</div>
-		</div>
+<div *ngFor="let flashcard of flashcards | async">
+	<div class="flip-card">
+	  <div class="flip-card-inner">
+	    <div class="flip-card-front">
+	      <h2>{{flashcard.Question}}</h2>
+	    </div>
+	    <div class="flip-card-back">
+	      <h5>{{flashcard.Answer}}</h5>
+	    </div>
+	  </div>
 	</div>
-</div>
 </div>
