@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { routing } from './app.routing'
+import { ModuleWithProviders }  from '@angular/core';
+import { routing } from './app.routing';
 import { masterFirebaseConfig } from './apikeys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
@@ -11,6 +12,9 @@ import { FlashCardsComponent } from './flash-cards/flash-cards.component';
 import { FormsModule }  from '@angular/forms';
 import * as $ from 'jquery';
 import { QuizComponent } from './quiz/quiz.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { FooterComponent } from './footer/footer.component';
 // import { FlipModule } from 'ngx-flip';
 
 
@@ -29,6 +33,9 @@ export const firebaseConfig = {
     FlashCardsComponent,
     QuizComponent,
     // CategoryPipe
+    NavbarComponent,
+    HomepageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +43,7 @@ export const firebaseConfig = {
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
+    routing
     // FlipModule,
 
   ],
