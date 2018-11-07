@@ -10,6 +10,7 @@ import { TimerComponent } from './timer/timer.component';
 import { FlashCardsComponent } from './flash-cards/flash-cards.component';
 import { FormsModule }  from '@angular/forms';
 import * as $ from 'jquery';
+import { QuizComponent } from './quiz/quiz.component';
 // import { FlipModule } from 'ngx-flip';
 
 
@@ -26,6 +27,7 @@ export const firebaseConfig = {
     SettingsComponent,
     TimerComponent,
     FlashCardsComponent,
+    QuizComponent,
     // CategoryPipe
   ],
   imports: [
