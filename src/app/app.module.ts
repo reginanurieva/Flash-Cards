@@ -7,7 +7,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AppComponent } from './app.component';
 import { FlashCardsComponent } from './flash-cards/flash-cards.component';
 import { FormsModule }  from '@angular/forms';
-// import { CategoryPipe } from './category.pipe'
+import * as $ from 'jquery';
 import { FlipModule } from 'ngx-flip'
 
 

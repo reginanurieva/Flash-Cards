@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { FlashCard } from '../flash-card.model';
 import { FLASHCARD } from '../practice'
 import { FlipModule } from 'ngx-flip'
+import * as $ from 'jquery'
 
 @Component({
   selector: 'app-flash-cards',
@@ -19,7 +20,9 @@ export class FlashCardsComponent implements OnInit {
 
     ngOnInit(){
       this.flashcards = this.flashcardService.getCards();
-      console.log(this.flashcards);
-    }
+      $(document).ready(function(){
+        alert("jquery workds");
+      });
+      }
 
 }
