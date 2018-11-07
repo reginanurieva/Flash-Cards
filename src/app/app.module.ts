@@ -1,20 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { routing } from './app.routing'
-import { masterFirebaseConfig } from './api-keys';
+import { masterFirebaseConfig } from './apikeys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AppComponent } from './app.component';
-<<<<<<< HEAD
 import { SettingsComponent } from './settings/settings.component';
 import { TimerComponent } from './timer/timer.component';
-=======
 import { FlashCardsComponent } from './flash-cards/flash-cards.component';
 import { FormsModule }  from '@angular/forms';
 import * as $ from 'jquery';
-import { FlipModule } from 'ngx-flip'
+// import { FlipModule } from 'ngx-flip';
 
->>>>>>> 9eb486562ab2a800b7ab2766d02022ed161b94ef
 
 
 export const firebaseConfig = {
@@ -26,13 +23,10 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-<<<<<<< HEAD
     SettingsComponent,
-    TimerComponent
-=======
+    TimerComponent,
     FlashCardsComponent,
     // CategoryPipe
->>>>>>> 9eb486562ab2a800b7ab2766d02022ed161b94ef
   ],
   imports: [
     BrowserModule,
@@ -40,7 +34,7 @@ export const firebaseConfig = {
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
-    FlipModule,
+    // FlipModule,
 
   ],
   providers: [],

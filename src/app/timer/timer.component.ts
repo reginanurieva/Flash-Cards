@@ -8,25 +8,18 @@ import * as $ from 'jquery';
 })
 export class TimerComponent {
   constructor() { }
-  timeLeft: number = 30;
+  timeLeft: number = 5;
   interval;
-    cardFront() {
-      this.interval = setInterval(() => {
-        if(this.timeLeft > 0) {
-          this.timeLeft--;
-        } else {
-          this.timeLeft = 30;
-        }
-      },1000);
-    }
-    cardBack () {
-    if (this.timeLeft === 0) {
-      $(".cardFront").hide();
-      $(".cardBack").show();
-    } else {
-      $(".cardFront").show();
-      $(".cardBack").hide();
-    }
+    cardCheck() {
+    var interval = setInterval(() => {
+      if(this.timeLeft <= 0) {
+        $(".card-front").hide();
+        $(".card-back").show();
+      clearInterval(interval);
+      } else {
+        this.timeLeft--;
+        console.log(this.timeLeft);
+      }
+    },1000);
   }
-
 }
