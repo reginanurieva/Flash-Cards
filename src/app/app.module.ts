@@ -4,7 +4,7 @@ import { ModuleWithProviders }  from '@angular/core';
 import { FormsModule }  from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
-import { masterFirebaseConfig } from './apikeys';
+import { masterFirebaseConfig } from './apiKeys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AppComponent } from './app.component';
