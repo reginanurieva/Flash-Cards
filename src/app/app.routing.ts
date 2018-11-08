@@ -11,24 +11,18 @@ import { FooterComponent } from './footer/footer.component';
 
 
 const appRoutes: Routes = [
-  {
-<<<<<<< HEAD
-      path: '',
-      component: HomepageComponent
-    },
-
     {
         path: 'finalpage',
         component: FinalpageComponent
-      }
-=======
+      },
+    {
     path: '',
     component: HomepageComponent
   },
   {
     path: 'csharp',
     component: FlashCardsComponent
-  }, 
+  },
   {
     path: 'interview',
     component: FlashCardsComponent
@@ -45,8 +39,6 @@ const appRoutes: Routes = [
     path: 'settings',
     component: SettingsComponent
   },
-
->>>>>>> ce283b497e1454f14d66ed9186f92e42633a89e9
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
