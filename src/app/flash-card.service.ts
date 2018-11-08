@@ -3,6 +3,7 @@ import { FlashCardsComponent } from './flash-cards/flash-cards.component'
 import { FLASHCARD } from './practice'
 import { FlashCard } from './flash-card.model'
 import { AngularFirestore } from '@angular/fire/firestore';
+import { empty } from 'rxjs/Observer';
 
 @Injectable()
 export class FlashCardService {
@@ -12,29 +13,62 @@ export class FlashCardService {
     return FLASHCARD;
   }
 
-  // getCsharpQuestions(){
-  //   var emptyArray: FlashCard[]=[];
-
-  //   for(var i=0; i<FLASHCARD.length; i++){
-  //     if(FLASHCARD[i].category === "Csharp"){
-  //       emptyArray.push(FLASHCARD[i])
-  //     }
-  //     console.log(emptyArray)
-  //       return emptyArray;
-  //   }
-  // }
   getCsharpQuestions(){
-    var cards = FLASHCARD;
-    var emptyArray: FlashCard[]=[];
-    for(let flashcard of cards){
-      console.log(cards[5])
-      if(flashcard.category === "Csharp"){
-        emptyArray.push(flashcard)
+    let arr: FlashCard[]=[]
+    FLASHCARD.forEach(function(card){
+      if(card.category === "Csharp"){
+        arr.push(card);
+        console.log(arr)
+      } else if (card.category === "MySQL"){
+        arr.push(card)
       }
-      console.log(emptyArray.length)
-      return emptyArray;
-    }
+    })
+    return arr;
   }
+
+
+  getJSQuestions(){
+    let arr: FlashCard[]=[]
+    FLASHCARD.forEach(function(card){
+      if(card.category === "JS"){
+        arr.push(card);
+      }
+    })
+    return arr;
+  }
+
+  getInterviewQuestions(){
+    let arr: FlashCard[]=[]
+    FLASHCARD.forEach(function(card){
+      if(card.category === "interview"){
+        arr.push(card);
+      }
+    })
+    return arr;
+  }
+  getHTMLQuestions(){
+    let arr: FlashCard[]=[]
+    FLASHCARD.forEach(function(card){
+      if(card.category === "html"){
+        arr.push(card);
+        console.log(arr)
+      } else if (card.category === "angular"){
+        arr.push(card)
+      }
+    })
+    return arr;
+  }
+
+  // getCsharpQuestions() {
+  //   let card = FLASHCARD; 
+  //   let newAr: FlashCard[]=[];
+  //   for(var i=0; i<=card.length -1; i++) {
+  //     if(card[i].category === "Csharp"){
+  //       newAr.push(card[i])
+  //     }
+  //   }
+  //   return newAr;
+  // }
 
   // getMySqlQuestions(){
   //   var emptyArray: FlashCard[]=[];

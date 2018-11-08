@@ -19,6 +19,12 @@ export class FlashCardsComponent implements OnInit {
     ngOnInit(){
       if(this.router.url === '/'){
         this.flashcards=this.flashcardService.getCsharpQuestions()
+      } else if (this.router.url ==='/interview'){
+        this.flashcards=this.flashcardService.getInterviewQuestions()
+      } else if (this.router.url === '/js'){
+        this.flashcards=this.flashcardService.getJSQuestions()
+      } else if (this.router.url === '/htlm'){
+        this.flashcards=this.flashcardService.getHTMLQuestions();
       }
     }
 }
