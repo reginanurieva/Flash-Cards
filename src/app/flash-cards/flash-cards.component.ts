@@ -3,7 +3,8 @@ import { FirebaseListObservable } from 'angularfire2/database';
 import { FlashCardService } from '../flash-card.service';
 import { Router } from '@angular/router';
 import { FlashCard } from '../flash-card.model';
-import { FLASHCARD } from '../practice'
+import { FLASHCARD } from '../practice';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-flash-cards',
@@ -14,6 +15,24 @@ import { FLASHCARD } from '../practice'
 })
 export class FlashCardsComponent implements OnInit {
   flashcards: FlashCard[];
+
+  startTimer() {
+    console.log("Timer is on");
+  }
+
+  timeLeft: number = 30;
+  interval;
+    cardCheck() {
+    var interval = setInterval(() => {
+      if(this.timeLeft <= 0) {
+        alert("Stop where you are in the flash cards and reflect on your thoughts");
+        this.timeLeft = 30;
+      clearInterval(interval);
+      } else {
+        this.timeLeft--;
+      }
+    },1000);
+  }
 
   constructor(private flashcardService: FlashCardService, private router: Router){}
     ngOnInit(){

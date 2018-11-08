@@ -17,7 +17,6 @@ export class FlashCardService {
     FLASHCARD.forEach(function(card){
       if(card.category === "Csharp"){
         arr.push(card);
-        console.log(arr)
       } else if (card.category === "MySQL"){
         arr.push(card)
       }

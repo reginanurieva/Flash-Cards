@@ -1,4 +1,5 @@
-
+<app-settings (clickSender)="cardCheck($event)"></app-settings>
+<div class="timer">{{timeLeft}}</div>
 <div id="flash" *ngFor="let flashcard of flashcards">
 	<div class="flip-card">
 	  <div class="flip-card-inner">

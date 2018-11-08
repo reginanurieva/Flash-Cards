@@ -6,8 +6,18 @@
 
 }
 
+.timer {
+  color: white;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
 h4 {
     padding: 15px;
+    /* line-height: 250px; */
+    word-wrap: break-all;
+
 
 }
 
@@ -54,6 +64,7 @@ div {
 
 .flip-card-front {
   background-color: #1c3d72;
+  background-image: url("https://coolbackgrounds.io/images/backgrounds/sea-edge-311c5cd5.png");
   color: black;
   z-index: 1;
 }
