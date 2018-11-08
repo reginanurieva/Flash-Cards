@@ -1,10 +1,27 @@
-
-div{
+#flash {
   width: 30%;
-  border-radius: 10px;
-  float: left;
-  margin: 5px;
+  display: inline-block;
+  padding: 10px;
+  margin-left: 15px;
+
 }
+
+h4 {
+    padding: 15px;
+
+}
+
+.flashAnswers {
+    padding: 15px;
+
+}
+
+div {
+  border-radius: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 .flip-card {
   background-color: transparent;
   width: 100%;

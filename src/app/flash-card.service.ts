@@ -2,7 +2,6 @@ import { Injectable, Component, OnInit } from '@angular/core';
 import { FlashCardsComponent } from './flash-cards/flash-cards.component'
 import { FLASHCARD } from './practice'
 import { FlashCard } from './flash-card.model'
-import { AngularFirestore } from '@angular/fire/firestore';
 import { empty } from 'rxjs/Observer';
 
 @Injectable()
@@ -59,7 +58,7 @@ export class FlashCardService {
   }
 
   // getCsharpQuestions() {
-  //   let card = FLASHCARD; 
+  //   let card = FLASHCARD;
   //   let newAr: FlashCard[]=[];
   //   for(var i=0; i<=card.length -1; i++) {
   //     if(card[i].category === "Csharp"){

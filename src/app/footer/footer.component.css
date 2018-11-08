@@ -5,13 +5,6 @@
   grid-auto-rows: minmax(100px, auto);
   width: 50%;
   margin: auto;
-
-
-}
-
-
-.column{
-
 }
 
 .fa-heart{
@@ -31,6 +24,7 @@ li{
  }
 
  .lines{
+   
    background-color: #c3c7c9;
  }
 
