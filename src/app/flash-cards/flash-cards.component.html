@@ -1,0 +1,13 @@
+
+<div id="flash" *ngFor="let flashcard of flashcards">
+	<div class="flip-card">
+	  <div class="flip-card-inner">
+	    <div class="flip-card-front">
+	      <h4>{{flashcard.question}}</h4>
+	    </div>
+	    <div class="flip-card-back">
+	      <p class="flashAnswers">{{flashcard.answer}}</p>
+	    </div>
+	  </div>
+	</div>
+</div>
