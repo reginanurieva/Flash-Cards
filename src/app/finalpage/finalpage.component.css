@@ -1,0 +1,14 @@
+p{
+  color: white;
+  text-align: center;
+}
+
+.fin{
+  background-image: url('../../assets/f.jpg');
+  /* opacity: 3; */
+
+  /* background-position: center; */
+}
+div::after`{
+  opacity: 0.5;
+}
