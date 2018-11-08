@@ -1,11 +1,11 @@
-<div *ngFor="let flashcard of flashcards | async">
+<div *ngFor="let flashcard of flashcards">
 	<div class="flip-card">
 	  <div class="flip-card-inner">
 	    <div class="flip-card-front">
-	      <h2>{{flashcard.Question}}</h2>
+	      <h2>{{flashcard.question}}</h2>
 	    </div>
 	    <div class="flip-card-back">
-	      <h5>{{flashcard.Answer}}</h5>
+	      <h5>{{flashcard.answer}}</h5>
 	    </div>
 	  </div>
 	</div>

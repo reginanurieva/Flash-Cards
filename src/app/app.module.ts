@@ -7,9 +7,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AppComponent } from './app.component';
 import { FlashCardsComponent } from './flash-cards/flash-cards.component';
 import { FormsModule }  from '@angular/forms';
-import * as $ from 'jquery';
-import { FlipModule } from 'ngx-flip'
-
+import { FlashCard } from './flash-card.model'
 
 
 export const firebaseConfig = {
@@ -30,7 +28,6 @@ export const firebaseConfig = {
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
-    FlipModule,
 
   ],
   providers: [],

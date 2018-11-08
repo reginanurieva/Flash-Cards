@@ -13,8 +13,6 @@
 //        for (var i = 0; i < input.length; i++) {
 //          if (input[i].category === "Csharp") {
 //            output.push(input[i]);
-//          } else if (input[i].category === "MySQL"){
-//            output.push(input[i])
 //          }
 //        }
 //        return output;

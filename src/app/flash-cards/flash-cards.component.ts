@@ -1,11 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, DoCheck } from '@angular/core';
 import { FirebaseListObservable } from 'angularfire2/database';
 import { FlashCardService } from '../flash-card.service';
 import { Router } from '@angular/router';
 import { FlashCard } from '../flash-card.model';
 import { FLASHCARD } from '../practice'
-import { FlipModule } from 'ngx-flip'
-import * as $ from 'jquery'
 
 @Component({
   selector: 'app-flash-cards',
@@ -15,12 +13,12 @@ import * as $ from 'jquery'
 
 })
 export class FlashCardsComponent implements OnInit {
-  flashcards: FirebaseListObservable<any[]>;
+  flashcards: FlashCard[];
 
-  constructor(private flashcardService: FlashCardService){}
-
+  constructor(private flashcardService: FlashCardService, private router: Router){}
     ngOnInit(){
-      this.flashcards = this.flashcardService.getCards();
+      if(this.router.url === '/'){
+        this.flashcards=this.flashcardService.getCsharpQuestions()
       }
-
+    }
 }
