@@ -17,6 +17,7 @@ import { QuizComponent } from './quiz/quiz.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { FooterComponent } from './footer/footer.component';
+import { FinalpageComponent } from './finalpage/finalpage.component';
 
 
 export const firebaseConfig = {
@@ -34,7 +35,8 @@ export const firebaseConfig = {
     QuizComponent,
     NavbarComponent,
     HomepageComponent,
-    FooterComponent
+    FooterComponent,
+    FinalpageComponent
   ],
   imports: [
     BrowserModule,

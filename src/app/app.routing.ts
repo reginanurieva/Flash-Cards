@@ -4,20 +4,25 @@ import { FlashCardsComponent } from './flash-cards/flash-cards.component'
 import { QuizComponent } from './quiz/quiz.component';
 import { SettingsComponent } from './settings/settings.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { FinalpageComponent } from './finalpage/finalpage.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 
 
 
 const appRoutes: Routes = [
-  {
+    {
+        path: 'finalpage',
+        component: FinalpageComponent
+      },
+    {
     path: '',
     component: HomepageComponent
   },
   {
     path: 'csharp',
     component: FlashCardsComponent
-  }, 
+  },
   {
     path: 'interview',
     component: FlashCardsComponent
@@ -34,7 +39,6 @@ const appRoutes: Routes = [
     path: 'settings',
     component: SettingsComponent
   },
-
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

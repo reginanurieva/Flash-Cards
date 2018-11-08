@@ -75,3 +75,9 @@ div {
   transform: rotateY(180deg);
   z-index: 1;
 }
+
+a{
+  margin-left:60px;
+  color: red;
+  font-size: 25px;
+}
