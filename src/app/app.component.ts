@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SettingsComponent } from './settings/settings.component';
 import * as $ from 'jquery'
 
 @Component({
@@ -8,4 +9,9 @@ import * as $ from 'jquery'
 })
 export class AppComponent {
   title = 'app';
+
+
+  startTimer() {
+    console.log("Timer is on");
+  }
 }

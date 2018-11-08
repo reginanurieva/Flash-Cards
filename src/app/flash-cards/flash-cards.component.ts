@@ -17,13 +17,13 @@ export class FlashCardsComponent implements OnInit {
 
   constructor(private flashcardService: FlashCardService, private router: Router){}
     ngOnInit(){
-      if(this.router.url === '/'){
+      if(this.router.url === '/csharp'){
         this.flashcards=this.flashcardService.getCsharpQuestions()
       } else if (this.router.url ==='/interview'){
         this.flashcards=this.flashcardService.getInterviewQuestions()
       } else if (this.router.url === '/js'){
         this.flashcards=this.flashcardService.getJSQuestions()
-      } else if (this.router.url === '/htlm'){
+      } else if (this.router.url === '/html'){
         this.flashcards=this.flashcardService.getHTMLQuestions();
       }
     }

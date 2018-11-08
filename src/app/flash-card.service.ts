@@ -51,7 +51,6 @@ export class FlashCardService {
     FLASHCARD.forEach(function(card){
       if(card.category === "html"){
         arr.push(card);
-        console.log(arr)
       } else if (card.category === "angular"){
         arr.push(card)
       }
