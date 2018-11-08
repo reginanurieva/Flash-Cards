@@ -1,8 +1,9 @@
 #flash {
   width: 30%;
   display: inline-block;
-  padding: 10px;
-  margin-left: 15px;
+  padding: 20px;
+  margin-left: 50px;
+
 
 }
 
@@ -11,6 +12,8 @@
   position: fixed;
   bottom: 10px;
   left: 10px;
+  font-size: 40px;
+  margin-left: 5px;
 }
 
 h4 {
@@ -28,15 +31,13 @@ h4 {
 
 div {
   border-radius: 10px;
-  margin-left: 5px;
-  margin-right: 5px;
 }
 
 .flip-card {
   background-color: transparent;
   width: 100%;
   height: 300px;
-  perspective: 1000px;
+  perspective: 100% ;
   margin: 5%;
   float: center;
 }
@@ -71,13 +72,19 @@ div {
 
 .flip-card-back {
   background-color: #2980b9;
-  color: black;
+  color: white;
   transform: rotateY(180deg);
   z-index: 1;
+  background-image: url("http://3.bp.blogspot.com/-7_SL72jHg-Y/ThFs5MwZUBI/AAAAAAAAAJ8/GLV1x9j__8I/s400/blue-serenity-animated-wavy+2.gif");
+
 }
 
-a{
-  margin-left:60px;
+.additionalResources {
+  margin-left:45%;
   color: red;
-  font-size: 25px;
+  font-size: 35px;
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }

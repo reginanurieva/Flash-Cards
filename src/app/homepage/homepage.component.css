@@ -31,6 +31,10 @@ p{
   opacity: .65;
 }
 
+.headlineContent {
+  margin-top: 100px;
+}
+
 .startbutton{
   background-color: #d8364e;
   color: white;
@@ -42,8 +46,9 @@ p{
   font-size: 15px;
 }
 
-.headline2{
+.headlineLeft{
   text-align: left;
+  /*margin-left: 50px;*/
   color: #a3d1bd;
   padding-left: 20px;
 }
@@ -52,8 +57,9 @@ p{
   /* border-color: red; */
 }
 
-.headline3{
+.headlineRight{
   text-align: right;
+  /*margin-right: 100px;*/
   color: #a3d1bd;
   padding-right: 20px;
   /* margin-bottom: 30px; */
@@ -70,12 +76,7 @@ p{
   /* border-color: red; */
 }
 
-.headline4{
-  text-align: left;
-  color: #a3d1bd;
-  padding-left: 20px;
-  /* margin-bottom: 30px; */
-}
+
 .css{
   text-align: left;
   padding-left: 20px;
@@ -86,12 +87,7 @@ p{
   /* border-color: red; */
 }
 
-.headline5{
-  text-align: right;
-  color: #a3d1bd;
-  padding-right: 20px;
-  /* margin-bottom: 30px; */
-}
+
 
 .ang{
   text-align: right;
