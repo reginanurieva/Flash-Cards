@@ -21,7 +21,7 @@ export class FlashCardsComponent implements OnInit {
     ngOnInit(){
       this.flashcards = this.flashcardService.getCards();
       $(document).ready(function(){
-        alert("jquery workds");
+        alert("jquery works");
       });
       }
 

@@ -17,6 +17,10 @@ const appRoutes: Routes = [
   {
     path: 'quiz',
     component: QuizComponent
+  },
+  {
+    path: 'flash-cards',
+    component: FlashCardsComponent
   }
 ];
 

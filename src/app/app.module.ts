@@ -11,7 +11,6 @@ import { AppComponent } from './app.component';
 import { SettingsComponent } from './settings/settings.component';
 import { TimerComponent } from './timer/timer.component';
 import { FlashCardsComponent } from './flash-cards/flash-cards.component';
-
 import * as $ from 'jquery';
 import { QuizComponent } from './quiz/quiz.component';
 import { NavbarComponent } from './navbar/navbar.component';
