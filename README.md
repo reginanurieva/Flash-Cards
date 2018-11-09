@@ -1,27 +1,51 @@
-# FlashCards
+# Angular Flash Cards
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+#### Studying tool in JavaScript using Angular.
 
-## Development server
+#### By _Regina Nurieva_, _David Mortkowitz_, _Catherine Bradley_ _and_ _Akjol Jaenbai_.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Description
 
-## Code scaffolding
+Application in Angular 5 disigned to help its users to refresh their knowledge in web development and to study new material. This app allows users to select the topic from the list of programming languages.   
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Specifications
 
-## Build
+| User Stories |
+|----|
+| User is welcomed by the splash page |
+| User can select the programming language from the nav bar |
+| Users can select the programming language from the splash page with the buttons|
+| User can hover the mouse over the card to see the answer |
+| User can navigate to additional resources page for more content |
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Firebase Deployment server
 
-## Running unit tests
+https://flash-cards-b98bd.firebaseapp.com/
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Setup/Installation Requirements
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+* Clone this repository from https://github.com/ctb116/Flash-Cards
 
-## Further help
+* * Open up in the console with the following command:
+```
+cd Flash-Cards
+```
+* Install node:
+```
+npm install
+```
+* Run the program in the browser:
+```
+ng serve
+```
+* Navigate to the
+```
+http://localhost:4200/
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### License
+
+*This software is licensed under the MIT license.*
+
+Copyright (c) 2018 **Regina Nurieva**, **David Mortkowitz**, **Catherine Bradley**, **Akjol Jaenbai**.
